@@ -10,7 +10,7 @@ i++;
 t+=dt;
 
 %-----ロケットにかかる力を求める
-rocket_Force_Moment2
+rocket_Force_Moment
 
 %-----機体座標系から慣性座標系へ
 dcm=quat2dcm(q);
