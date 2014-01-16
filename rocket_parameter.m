@@ -1,6 +1,6 @@
 %-----初期姿勢
 phi0=0;
-theta0=83*pi/180;
+theta0=80*pi/180;
 psi0=0*pi/180;
 q=euler2quat(phi0,theta0,psi0);
 
@@ -22,7 +22,7 @@ dt=0.005;
 t=0;
 
 %-----風設定
-wind=[1;0;0];
+wind=[0;2;0];
 
 %-----推力設定
 Total_impulse=2.7;

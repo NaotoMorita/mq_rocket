@@ -1,5 +1,5 @@
 clear all
-quaternion
+quaternion2
 
 
 %-----パラメータ読込
@@ -58,6 +58,7 @@ if -r(3)>=-L_h
 	q=quat_normalizer(q);
 end
 	
+%ログ系
 log_T(:,i)=T;
 log_D(:,i)=D;
 log_L(:,i)=L;
@@ -73,7 +74,7 @@ log_eu(:,i)=quat2euler(q);
 log_dcm{i}=dcm;
 
 
-if sum(isnan(M_e))!=0
+if sum(isnan(M_e))!=0 
 	break;
 end
 until(-r(3)<=-L_h&&v(3)>0&&i>=10)
